@@ -1,4 +1,4 @@
-package hello.hellospring.controller;
+package hello.hellospring;
 
 import hello.hellospring.repository.JdbcMemberRepository;
 import hello.hellospring.repository.MemberRepository;
@@ -8,6 +8,7 @@ import javax.sql.DataSource;
 import javax.swing.Spring;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
