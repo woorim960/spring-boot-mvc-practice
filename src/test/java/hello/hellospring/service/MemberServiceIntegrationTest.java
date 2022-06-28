@@ -14,7 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 @SpringBootTest
-@Transactional
+@Transactional // 테스트 전에 트랜잭션을 시작하고, 테스트가 끝나면 롤백을 수행하여 '테스트' 이전의 상태와 동일하게 만들어준다. (모든 테스트들 마다 수행된다.)
 class MemberServiceIntegrationTest {
 
     @Autowired MemberService memberService;
