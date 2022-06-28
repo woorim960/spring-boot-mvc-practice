@@ -3,6 +3,7 @@ package hello.hellospring.repository;
 import hello.hellospring.domain.Member;
 
 import java.util.*;
+import org.springframework.stereotype.Repository;
 
 public class MemoryMemberRepository implements MemberRepository {
 
