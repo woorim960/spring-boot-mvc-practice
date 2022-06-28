@@ -23,7 +23,6 @@ public class JdbcMemberRepository implements MemberRepository{
 
   @Override
   public Member save(Member member) {
-    System.out.println(member.getName());
     String sql = "insert into member(name) values(?)";
 
     Connection conn = null;

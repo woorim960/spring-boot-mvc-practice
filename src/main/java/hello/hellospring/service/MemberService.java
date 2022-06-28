@@ -17,13 +17,9 @@ public class MemberService {
     }
 
     public Long join(Member member) {
-        System.out.println(member);
-        System.out.println(member.getName());
         validateDuplicateMember(member); // 중복 회원 검증
         System.out.println(member.getName());
         memberRepository.save(member);
-        System.out.println("저장 후");
-        System.out.println(member.getName());
         return member.getId();
     }
 
