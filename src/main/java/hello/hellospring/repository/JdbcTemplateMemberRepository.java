@@ -23,7 +23,7 @@ public class JdbcTemplateMemberRepository implements MemberRepository {
 
   @Override
   public Optional<Member> findById(Long id) {
-    return Optional.empty();
+    return jdbcTemplate.query("select * from member where id = ?");
   }
 
   @Override
