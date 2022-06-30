@@ -21,7 +21,7 @@ class MemberServiceIntegrationTest {
     @Autowired MemberRepository memberRepository;
 
     @Test
-    void join() {
+    void  join() {
         // given
         Member member = new Member();
         member.setName("spring");
